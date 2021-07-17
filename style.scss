@@ -1,0 +1,43 @@
+@import 'variable';
+@import 'navtop';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+li {
+    list-style:none;
+}
+
+a { 
+    color: #ebebeb;
+    text-decoration: none;
+}
+
+body {
+    font-size: 16px;
+    font-family: source;
+    color: $color-seal;
+    line-height: 1;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}

@@ -1,0 +1,41 @@
+.wrapper {
+    background-color: $color-seal;
+}
+
+.navtop {
+    display    : flex;
+    align-items: center;
+    padding    : 15px 0;
+
+    &-menu-link {
+        font-family: lato;
+        font-weight: 600;
+        transition: color 0.2s ease-out;
+    }
+    i {
+        font-size: 25px;
+        margin-right:20px;
+    }
+    &-menu-right {
+        margin-left: auto;
+
+        a:not(:first-child) {
+            margin-left: 25px;
+        }
+
+        a:hover {
+            color: $color-aliz;
+        }
+
+    }
+
+    &-menu-left {
+        a:first-child {
+            margin-right: 45px;
+        }
+
+        a:hover {
+            color: $color-aliz;
+        }
+    }
+}
