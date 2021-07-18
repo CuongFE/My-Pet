@@ -1,4 +1,4 @@
-.wrapper {
+.navtop-home {
     background-color: $color-seal;
 }
 
@@ -10,14 +10,21 @@
     &-menu-link {
         font-family: lato;
         font-weight: 600;
-        transition: color 0.2s ease-out;
+        transition : color 0.2s ease-out;
+        color      : #ebebeb;
+
+        #navbar-icon {
+            font-size   : 25px;
+            margin-right: 20px;
+        }
+
+
     }
-    i {
-        font-size: 25px;
-        margin-right:20px;
-    }
+
     &-menu-right {
         margin-left: auto;
+        font-size  : 25px;
+
 
         a:not(:first-child) {
             margin-left: 25px;
@@ -37,5 +44,66 @@
         a:hover {
             color: $color-aliz;
         }
+    }
+}
+
+.navbar {
+    display    : flex;
+    align-items: center;
+    padding    : 50px 0px;
+
+    .navbar-logo {
+        font-family: pacifica;
+        font-size  : 42px;
+        font-weight: 600;
+        position   : relative;
+
+        span:first-child {
+            color: $color-woody;
+        }
+
+        span:nth-child(2) {
+            color: $color-aliz;
+        }
+
+        &-img {
+            position: absolute;
+            top     : -12px;
+        }
+    }
+
+    .navbar-menu {
+        margin-left: auto;
+
+        &-link {
+            transition : color 0.2s ease-out;
+            font-family: source;
+            font-size  : 17px;
+            color      : $color-seal;
+            font-weight: 700;
+
+            &:hover {
+                color: $color-aliz;
+            }
+        }
+
+        &-link:not(:first-child) {
+            margin-left: 40px;
+        }
+    }
+}
+.navbar-auth {
+    display: flex;
+    align-items: center;
+    
+    &-shop {
+        margin-left: 50px;
+        font-size: 40px;
+        color: $color-aliz;
+    }
+
+    &-search {
+        margin-left: 35px;
+        font-size: 20px;
     }
 }
