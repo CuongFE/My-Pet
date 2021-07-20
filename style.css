@@ -69,6 +69,7 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 50px 0px;
+  width: 100%;
 }
 
 .navbar .navbar-logo {
@@ -127,9 +128,67 @@
   color: #e72f30;
 }
 
+.navbar-auth-shop .navbar-number {
+  text-align: center;
+  font-family: source;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px;
+  float: right;
+  background-color: #e0cece;
+  border-radius: 50%;
+}
+
 .navbar-auth-search {
   margin-left: 35px;
   font-size: 20px;
+  color: #fffF;
+  background-color: red;
+  height: 100%;
+  width: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.home-banner {
+  background-color: #767875;
+}
+
+.home-banner .banner {
+  text-align: center;
+  padding: 270px 0px 220px 0px;
+  color: #ffff;
+}
+
+.home-banner .banner-title {
+  font-size: 80px;
+  font-family: pacifica;
+  margin-bottom: 50px;
+}
+
+.home-banner .banner-content-small {
+  font-family: source;
+  font-style: italic;
+  font-weight: 600;
+  margin-bottom: 35px;
+}
+
+.home-banner .banner-content-normal {
+  font-family: source;
+  font-size: 30px;
+  margin-bottom: 70px;
+  font-weight: 600;
+}
+
+.home-banner .banner .banner-button {
+  margin-right: 30px;
 }
 
 * {
@@ -170,7 +229,27 @@ body {
 }
 
 .wrapper {
-  max-width: 1440px;
+  max-width: 100%;
   margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  width: 200px;
+  padding: 15px 55px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 30px;
+  border: 2px solid #ffff;
+  background-color: transparent;
+  color: #ffff;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+}
+
+.btn:hover {
+  border-color: #e72f30;
+  background-color: #e72f30;
 }
 /*# sourceMappingURL=style.css.map */

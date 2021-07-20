@@ -51,6 +51,7 @@
     display    : flex;
     align-items: center;
     padding    : 50px 0px;
+    width      : 100%;
 
     .navbar-logo {
         font-family: pacifica;
@@ -92,18 +93,73 @@
         }
     }
 }
+
 .navbar-auth {
-    display: flex;
+    display    : flex;
     align-items: center;
-    
+
     &-shop {
         margin-left: 50px;
-        font-size: 40px;
-        color: $color-aliz;
+        font-size  : 40px;
+        color      : $color-aliz;
+
+        .navbar-number {
+            text-align: center;
+            font-family: source;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px;
+            float: right;
+            background-color: #e0cece;
+            border-radius: 50%;
+        }
     }
 
     &-search {
-        margin-left: 35px;
-        font-size: 20px;
+        margin-left     : 35px;
+        font-size       : 20px;
+        color           : #fffF;
+        background-color: red;
+        height: 100%;
+        width: 65px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
+}
+
+.home-banner {
+    background-color: $color-xana;
+
+    .banner {
+        text-align: center;
+        padding   : 270px 0px 220px 0px;
+        color     : #ffff;
+
+        &-title {
+            font-size    : 80px;
+            font-family  : pacifica;
+            margin-bottom: 50px;
+        }
+
+        &-content-small {
+            font-family  : source;
+            font-style   : italic;
+            font-weight  : 600;
+            margin-bottom: 35px;
+        }
+
+        &-content-normal {
+            font-family  : source;
+            font-size    : 30px;
+            margin-bottom: 70px;
+            font-weight  : 600;
+        }
+
+        .banner-button {
+            margin-right: 30px;
+        }
+
+    }
+
 }
