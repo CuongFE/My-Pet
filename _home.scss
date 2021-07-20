@@ -92,6 +92,7 @@
             margin-left: 40px;
         }
     }
+    
 }
 
 .navbar-auth {
@@ -162,4 +163,66 @@
 
     }
 
+    label i {
+        color: black;
+        font-size:30px;
+        
+        cursor: pointer;
+        margin-left: 35px;
+        display: none;
+        
+
+    }
+    #check {
+        display: none;
+    }
 }
+
+.train {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 32px;
+    text-align: center;  
+    font-family: source;     
+    i {
+        font-size: 100px;
+        padding-bottom: 30px;
+    }    
+    &-cat {
+        text-align: center;
+        transition :all 0.5s ease-out;
+        h2 {
+            padding-bottom: 10px;
+        }
+        &:hover {
+            background-color: $color-aliz;
+            
+            color: white;
+        }
+    }
+    &-dog {
+        h2 {
+            padding-bottom: 10px;
+        }
+        &:hover {
+            background-color: $color-aliz;
+            transition :all 0.5s ease-out;
+            color: white;
+        }
+    }
+    &-paw {
+        h2 {
+            padding-bottom: 10px;
+        }
+        &:hover {
+            background-color: $color-aliz;
+            transition : 0.5s;
+            color: white;
+        }
+    }
+    &-cat, &-dog, &-paw {
+        padding: 10% 0;
+    }
+    
+}
+
