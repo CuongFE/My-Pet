@@ -206,8 +206,8 @@
 .train {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr);
-  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 32px;
   text-align: center;
   font-family: source;
@@ -259,6 +259,65 @@
   padding: 10% 0;
 }
 
+.pet-service .service-text {
+  text-align: center;
+  margin-bottom: 85px;
+}
+
+.pet-service .service-text h2 {
+  padding: 45px 0;
+  position: relative;
+}
+
+.pet-service .service-text h2::before {
+  content: '';
+  position: absolute;
+  margin: auto;
+  background-color: red;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 2px;
+  width: 80px;
+  top: 0px;
+  text-align: center;
+}
+
+.pet-service .service-pet {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  /*grid-template-columns: repeat(3,1fr);*/
+  grid-column-gap: 32px;
+  text-align: center;
+  font-family: source;
+  grid-row-gap: 70px;
+}
+
+.pet-service .service-pet-item {
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.pet-service .service-pet-item h3 {
+  padding: 50px 0;
+  text-transform: uppercase;
+}
+
+.pet-service .service-pet-item p {
+  padding-bottom: 50px;
+}
+
+.pet-service .service-pet-item:hover {
+  border-bottom: 1px solid #e72f30;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.pet-service .service-pet-item:hover h3 {
+  color: #e72f30;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
 
 * {
   margin: 0;

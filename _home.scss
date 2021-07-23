@@ -226,3 +226,60 @@
     
 }
 
+.pet-service {
+    .service {
+        
+        &-text {
+            text-align : center;
+            margin-bottom: 85px;
+            h2{
+                padding:45px 0;
+                position: relative;
+            }
+            h2::before {
+                content:'';
+                position: absolute;
+                margin: auto;
+                background-color: red;
+                box-sizing: border-box;
+                height: 2px;
+                width: 80px;
+                top: 0px;
+                text-align: center;
+
+            }
+
+        }
+        
+        &-pet {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;        
+            /*grid-template-columns: repeat(3,1fr);*/
+            grid-column-gap: 32px;
+            text-align: center;  
+            font-family: source;
+            grid-row-gap:70px;
+        
+
+            &-item {
+                border-bottom: 1px solid #dcdcdc;
+                h3 {
+                    padding: 50px 0;
+                    text-transform: uppercase;
+                }
+                p {
+                    padding-bottom: 50px;
+                }
+                &:hover {
+                    h3 {
+                    color: $color-aliz;
+                    transition: all 0.5s ease-in-out;                    
+                    }
+                    border-bottom: 1px solid $color-aliz;
+                    transition: all 0.5s ease-in-out;
+                }
+            }
+        }
+    }
+}
+
