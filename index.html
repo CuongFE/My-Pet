@@ -8,10 +8,12 @@
     <title>My Pet</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/c9f5070d1e.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </head>
 
 <body>
-    <nav class="wrapper navtop-home">
+    <nav class="wrapper navtop-home" style="display: none;">
         <div class="container">
             <div class="navtop">
                 <div class="navtop-menu-left">
@@ -31,7 +33,8 @@
             </div>
         </div>
     </nav>
-    <section class="container" style="display: flex;">
+
+    <section class="container" style="display: none;" style="display: flex;">
         <div class="navbar">
             <div class="navbar-logo">
                 <span>my</span>
@@ -58,7 +61,8 @@
             </a>
         </div>
     </section>
-    <section class="wrapper home-banner">
+
+    <section class="wrapper home-banner" style="display: none;">
         <div class="banner">
             <h1 class="banner-title">
                 Love your Pet , Care Pet
@@ -73,7 +77,8 @@
             <a type="button" class="btn">Get Pet</a>
         </div>
     </section>
-    <section class="container">
+
+    <section class="container" style="display: none;">
         <div class="train">
             <div class="train-cat">
                 <i class="fas fa-cat"></i>
@@ -93,7 +98,8 @@
             </div>
         </div>
     </section>
-    <section class="container pet-service">
+
+    <section class="container pet-service" style="display: none;">
         <div class="service">
             <div class="service-text">
                 <h2><strong>Our Pet Services</strong></h2>
@@ -140,11 +146,99 @@
                     <p>In a professional context it often happens that private or corporate clients order a publication
                     </p>
                 </div>
-
             </div>
-
         </div>
     </section>
+
+    <!-- Survey Thu 07/24 -->
+    <section class="wrapper survey-home" style="display: none;">
+        <div class="container survey">
+            <div class="survey-item">
+                <i class="far fa-handshake"></i>
+                <div class="survey-item-content">
+                    <p>Happy Customers</p>
+                    <p>210</p>
+                </div>
+            </div>
+            <div class="survey-item">
+                <i class="far fa-handshake"></i>
+                <div class="survey-item-content">
+                    <p>Happy Customers</p>
+                    <p>210</p>
+                </div>
+            </div>
+            <div class="survey-item">
+                <i class="far fa-handshake"></i>
+                <div class="survey-item-content">
+                    <p>Happy Customers</p>
+                    <p>210</p>
+                </div>
+            </div>
+            <div class="survey-item">
+                <i class="far fa-handshake"></i>
+                <div class="survey-item-content">
+                    <p>Happy Customers</p>
+                    <p>210</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="system">
+            <div class="system-item">
+                <h1>Our pet health care System</h1>
+                <p>The doctors and staff at Pet Care Veterinary Hospital have years of experience treating a variety of
+                    reptiles including Bearded Dragons, Geckos, Snakes and Tortoises. Our hospital offers physical
+                    exams, vaccinations, nutrition, behavioral and environmental enrichment information for your pet
+                    ferret.</p>
+                <div class="system-img">
+                    <div class="system-img-item " id="system-img-1">
+                        <img src="system-icon-1.png" id="system-hide-icon-1">
+                        <h1>Home Delivery</h1>
+                    </div>
+                    <div class="system-img-item" id="system-img-2">
+                        <img src="system-icon-2.png" id="system-hide-icon-2">
+                        <h1>Quality Pet </h1>
+                    </div>
+                </div>
+            </div>
+            <div class="system-item right">
+                <h1>Doing the right thing, Discover Our Products</h1>
+                <p>Our veterinarians and staff understand the importance of the special bond you share with your pet and
+                    are dedicated to providing the best that modern veterinary care has to offer
+                </p>
+                <h1>Trusted Pet Sitters Across the Country <i class="fas fa-plus" id="plus-1" style="display: none;"></i> <i
+                        class="fas fa-minus" id="minus-1" style="display: block;"></i></h1>
+                <p id="sidedown-1">The perfect harmony between innovation and creativity, our bathroom tiles are
+                    produced in compliance
+                    with the international standards. High quality 20mm thick porcelain tiles that can be laid on
+                    pedestals,
+                </p>
+                <h1>Trusted Pet Sitters Across the Country <i class="fas fa-plus" id="plus-2"></i><i
+                    class="fas fa-minus" id="minus-2"></i></h1>
+                <p id="sidedown-2">The perfect harmony between innovation and creativity, our bathroom tiles are
+                    produced in compliance
+                    with the international standards. High quality 20mm thick porcelain tiles that can be laid on
+                    pedestals,
+                </p>
+                <h1>Trusted Pet Sitters Across the Country <i class="fas fa-plus" id="plus-3"></i><i
+                    class="fas fa-minus" id="minus-3"></i></h1>
+                <p id="sidedown-3">The perfect harmony between innovation and creativity, our bathroom tiles are
+                    produced in compliance
+                    with the international standards. High quality 20mm thick porcelain tiles that can be laid on
+                    pedestals,
+                </p>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer Thu 07/24 -->
+    
+    <script src="Myjs.js"></script>
+
 </body>
 
 </html>
