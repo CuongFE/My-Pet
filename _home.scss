@@ -423,3 +423,210 @@
 #minus-3 {
     display: none;
 }
+
+.footer-home {
+    background-color: #3a3939;
+}
+
+.footer {
+    display              : grid;
+    grid-template-columns: 390px 350px 360px;
+    padding              : 95px 0px 65px 0px;
+
+    &-col01 {
+        &-logo {
+            padding: 0px;
+
+            .navbar-logo {
+                padding-bottom: 45px;
+            }
+
+            #my {
+                color: #ffff;
+            }
+        }
+
+        &-content {
+            line-height  : 1.5;
+            margin-bottom: 65px;
+            color        : #c0c0c0;
+
+            span {
+                color: #e72f30;
+            }
+        }
+
+        &-menu {
+            display      : flex;
+            margin-bottom: 55px;
+
+            &-item:not(:first-child) {
+                margin-left: 30px;
+            }
+
+            &-link {
+                color    : #ffff;
+                font-size: 20px;
+
+                &:hover {
+                    color: #e72f30;
+
+                }
+            }
+        }
+
+        &-privacy {
+            a {
+                color: #c0c0c0;
+
+                &:hover {
+                    color: #e72f30;
+                }
+            }
+
+            a:first-child {
+                padding-right: 15px;
+                border-right : 1px solid #c0c0c0;
+            }
+
+            a:last-child {
+                margin-left: 20px;
+
+            }
+        }
+    }
+
+    &-col02 {
+        margin-left: 110px;
+
+
+        &-header {
+            color        : #ffff;
+            font-family  : yrsa;
+            font-size    : 20px;
+            margin-bottom: 60px;
+            position     : relative;
+
+            &:before {
+                content         : '';
+                width           : 40px;
+                height          : 2px;
+                background-color: #e72f30;
+                position        : absolute;
+                bottom          : -20px;
+            }
+        }
+
+        &-menu {
+            display: flex;
+            width  : 100%;
+
+            li:not(:last-child) {
+                margin-bottom: 25px;
+            }
+
+            a {
+                color: #c0c0c0;
+
+                &:hover {
+                    color: #e72f30;
+                }
+            }
+
+            &-right {
+                margin-left: 50px;
+            }
+        }
+
+    }
+
+    &-col03 {
+        margin-left: 160px;
+
+        &-header {
+            color        : #ffff;
+            font-family  : yrsa;
+            font-size    : 20px;
+            margin-bottom: 60px;
+            position     : relative;
+
+            &:before {
+                content         : '';
+                width           : 40px;
+                height          : 2px;
+                background-color: #e72f30;
+                position        : absolute;
+                bottom          : -20px;
+            }
+        }
+
+        &-content {
+            h5 {
+                color        : #ffff;
+                margin-bottom: 20px;
+            }
+
+            p {
+                color: #7d7d7d;
+            }
+
+            &-above {
+                padding-bottom: 30px;
+                border-bottom : 1px solid #4a4949;
+            }
+
+            &-under {
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+.footer-nav {
+    background-color: #1b1a1a;
+
+    .footer-navbar {
+        display        : flex;
+        justify-content: space-between;
+        align-items: center;
+        padding        : 45px 0px;
+
+        .input-button {
+            display         : flex;
+            background-color: #2d2d2d;
+            padding         : 5px 5px 5px 30px;
+            border-radius: 20px;
+        }
+
+        #input-footer {
+            border          : none;
+            background-color: #2d2d2d;
+            outline: none;
+            color: #ffff;
+            font-size: 15px;
+           
+        }
+
+        #button-footer {
+            border: none;
+            padding: 15px 35px;
+            background-color: #e72f30;
+            color: #ffff;
+            cursor: pointer;
+            margin-left: 5px;
+            border-radius: 20px;
+
+        }
+    }
+
+    p {
+        color      : #ffff;
+        font-weight: bold;
+    }
+
+    #text-footer {
+        color: #e72f30;
+    }
+
+
+}
