@@ -705,3 +705,38 @@
 
 
 }
+
+.mypethome {
+    margin-top: 160px;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-column-gap: 75px;
+    &-text span {
+        font-family: pacifica;
+    }
+    &-text .pet {
+        color: $color-aliz;
+    }
+    &-text h3 {
+        margin-bottom: 65px;
+    }
+    &-text hr {
+        
+        background-color: $color-aliz;
+        width: 30px;
+        height: 2px;
+        border: 1px solid $color-aliz;
+    }
+    &-text {
+        line-height: 28px;
+    }
+    &-text p {
+        font-family: source;
+    }
+    &-text a {
+        background-color: $color-aliz;
+        margin-top: 20px;
+        margin-left: 0;
+        padding: 8px 57px;
+    }
+}

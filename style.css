@@ -746,6 +746,49 @@
   color: #e72f30;
 }
 
+.mypethome {
+  margin-top: 160px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-column-gap: 75px;
+}
+
+.mypethome-text span {
+  font-family: pacifica;
+}
+
+.mypethome-text .pet {
+  color: #e72f30;
+}
+
+.mypethome-text h3 {
+  margin-bottom: 65px;
+}
+
+.mypethome-text hr {
+  background-color: #e72f30;
+  width: 30px;
+  height: 2px;
+  border: 1px solid #e72f30;
+}
+
+.mypethome-text {
+  line-height: 28px;
+}
+
+.mypethome-text p {
+  font-family: source;
+}
+
+.mypethome-text a {
+  background-color: #e72f30;
+  margin-top: 20px;
+  margin-left: 0;
+  padding: 8px 57px;
+}
+
 * {
   margin: 0;
   padding: 0;
