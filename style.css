@@ -298,6 +298,7 @@
   text-align: center;
   font-family: source;
   grid-row-gap: 70px;
+  margin-bottom: 140px;
 }
 
 .pet-service .service-pet-item {
@@ -747,6 +748,7 @@
 }
 
 .mypethome {
+  margin-bottom: 150px;
   margin-top: 160px;
   display: -ms-grid;
   display: grid;
@@ -764,6 +766,8 @@
 }
 
 .mypethome-text h3 {
+  margin-top: 15px;
+  font-size: 45px;
   margin-bottom: 65px;
 }
 

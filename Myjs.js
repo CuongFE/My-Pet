@@ -32,7 +32,7 @@ $(document).ready(function () {
 
     $('.system-img').find('.system-img-item').hover(function () {
         // hover IN
-        $(this).find('img').fadeOut(300);
+        $(this).find('img').fadeOut();
         $(this).css({
             'pointer-events': 'none',
         })
