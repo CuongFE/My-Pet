@@ -764,7 +764,7 @@
 
 // Bổ sung nút của navbar
 
-.toggle i {
+.toggle-navbar {
     align-items: center;   
     text-align: center;      
     font-size: 30px;
@@ -860,7 +860,7 @@
         }
     
     }
-    .toggle i {
+    .toggle-navbar {
         display: block;
         display         : flex;
         align-items     : center;
@@ -962,7 +962,8 @@
     
     // Khối system
     .system {
-        grid-template-columns: 1fr;
+        display: block;
+        
         &-item>h1 {
             font-size    : 30px;
             margin-bottom: 15px;
@@ -1077,8 +1078,6 @@
                 li:not(:last-child) {
                     margin-bottom: 15px;
                 }
-                
-
     
             }
     

@@ -793,7 +793,7 @@
   padding: 8px 57px;
 }
 
-.toggle i {
+.toggle-navbar {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -879,7 +879,7 @@
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
-  .toggle i {
+  .toggle-navbar {
     display: block;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -966,8 +966,7 @@
     display: none;
   }
   .system {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    display: block;
   }
   .system-item > h1 {
     font-size: 30px;
