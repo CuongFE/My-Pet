@@ -494,13 +494,13 @@
         grid-template-columns  : 1fr 1fr 1fr 1fr;
         /*grid-template-columns: repeat(4,1fr);*/
         grid-column-gap        : 32px;
-        text-align             : center;
+        
+        align-items: center;
         font-family            : source;
         padding                : 140px 0 100px 0;
 
         &-index {
-            text-align : center;
-            margin-left: 80px;
+            text-align : center;            
             box-sizing : border-box;
             width      : 100%;
 
@@ -1013,16 +1013,13 @@
     
     .logoindex {
         .logo {
-            display                : grid;
-            grid-template-columns  : 1fr 1fr;
-            grid-row-gap        : 20px;
-            grid-column-gap        : 10px;
-            text-align             : center;
+            display: flex;
+
             padding                : 50px 0 40px 0;
             align-items: center;
             &-index {
                 text-align : center;
-                margin-left: 40px;
+                
                 box-sizing : border-box;
                 
     
